@@ -226,7 +226,7 @@ span {
 
 
 /* Media pour l'afichage desktop */
-@media screen and (min-width:770px) {
+@media screen and (min-width:576px) {
 
     body {
         /* min-height: 100vh; */
