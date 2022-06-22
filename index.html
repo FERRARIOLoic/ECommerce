@@ -14,57 +14,44 @@
 </head>
 
 <body>
-    <header>
-
-        <div class="desktopHeader">
-
-            <div class="logo">
-
+    <header class="container-fluid">
+        <div class="row topHeader">
+            <div class="col-6 text-start logo">
                 <a href="http://127.0.0.1:5500/index.html">
                     <h1> <span id="hone">YOU</span> <span id="htwo">PHONE</span> </h1>
                 </a>
-
-
             </div>
-
-            <div class="cartDesktop">
-                <a href="">
-                    <p>Cart</p>
+            <div class="col-6 text-end align-self-center">
+                <button id="btnModalCart" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalCart">
                     <img id="filterLogo" src="public/assets/img/shoppingcart.svg" alt="">
-                </a>
+                </button>
             </div>
         </div>
-
-        <div class="cart">
-            <div class="menuCart menuCart" id="menuCart">
-                <img id="btnCartVue" type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#modalCart" src="public/assets/img/shoppingcart.svg" alt="Icon caddie de shopping">
+        <div class="row bottomHeader">
+            <div class="categories">
+                <span id="categories" data-famille="Smartphone" class="margin">Smartphones</span>
+                <span id="categories" data-famille="Tablette" class="margin">Tablettes</span>
+                <span id="categories" data-famille="Accessoires" class="margin">Accessoires</span>
             </div>
         </div>
-
-
     </header>
 
-    <div class="categories">
-        <span id="categories" data-famille="Smartphone" class="margin">Smartphones</span>
-        <span id="categories" data-famille="Tablette" class="margin">Tablets</span>
-        <span id="categories" data-famille="Accessoires" class="margin">Accessories</span>
-    </div>
-
-    <main>
-
-        <div id="menuViewFirst" class="h-100 d-flex flex-column align-items-center justify-content-around">
-
-            <div id="categories" data-famille="Smartphone" class="categorySmartphone">
-                <h2 id="categories" data-famille="Smartphone" class="hover">PHONES</h2>
+    <main class="container-fluid">
+        <div id="menuViewFirst" class="row">
+            <div class="col-12">
+                <div id="categories" data-famille="Smartphone" class="categorySmartphone">
+                    <h2 id="categories" data-famille="Smartphone" class="hover">SMARTPHONES</h2>
+                </div>
             </div>
-
-            <div id="categories" data-famille="Tablette" class="categoryTablet">
-                <h2 id="categories" data-famille="Tablette" class="hover">TABLETS</h2>
+            <div class="col-12">
+                <div id="categories" data-famille="Tablette" class="categoryTablet">
+                    <h2 id="categories" data-famille="Tablette" class="hover">TABLETTES</h2>
+                </div>
             </div>
-
-            <div id="categories" data-famille="Accessoires" class="categoryAccessories">
-                <h2 id="categories" data-famille="Accessoires" class="hover">ACCESSORIES</h2>
+            <div class="col-12">
+                <div id="categories" data-famille="Accessoires" class="categoryAccessories">
+                    <h2 id="categories" data-famille="Accessoires" class="hover">ACCESSOIRES</h2>
+                </div>
             </div>
 
 
@@ -102,16 +89,14 @@
 
 
 
-    <footer>
-
-        <div class="footer">
-            <div class="copyright">
-                <p id="footerPadding">Maxime Rattez, Loic Ferrario et Thibaud Marin. Mai 2022 </p> <a
-                    href="https://github.com/Maskwelldev/e-commerce-mamatitilolo" target="_blank">e-commerce.github</a>
-
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="copyright">
+                    <p id="footerPadding">Maxime Rattez, Loic Ferrario et Thibaud Marin. Mai 2022 </p>
+                </div>
             </div>
         </div>
-
 
     </footer>
 
@@ -153,7 +138,7 @@
 
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'
         integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous'>
-    </script>
+        </script>
 
     <script src="public/assets/js/script.js"></script>
     <script src="public/assets/js/products.js"></script>

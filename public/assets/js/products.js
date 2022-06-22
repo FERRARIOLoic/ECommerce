@@ -215,24 +215,26 @@ selectFamily.forEach(eachTableElement => {
                     
                         htmlContent += `
                             
-                                <div class="col-3 col-md-3 bg-white p-3">
+                                <div class="col-6 col-md-3 bg-white p-3  align-self-center">
                                     <!-- CARD -->
-                                    <div class="row ">
-                                        <div class="col-4">
-                                        <img style="width:50px;" src="https://trepidai-astuces.s3.amazonaws.com/images/modeles/${marque}_${tutorialName}.jpg">
+                                    <div class="row hover align-self-center">
+                                        <div class="col-4  text-end">
+                                        <img class="productPreview" src="https://trepidai-astuces.s3.amazonaws.com/images/modeles/${marque}_${tutorialName}.jpg">
                                         </div>
-                                        <div id="infoMovie" class="col-8">
+                                        <div id="infoMovie" class="col-8 dataProduct">
                                             <div id="titleMovie" class="row">
-                                                <div class="col-12">
-                                                <i>${productID}</i> / <strong>${commercialName}</strong>
+                                                <div id="categories" class="col-12">
+                                                    <span id="categories"  class="hover">
+                                                    <strong>${commercialName}</strong>
+                                                    </span>
                                                 </div>
                                             </div>
                                             <div id="textMovie" class="row">
                                                 <div class="col-10">
-                                                ${technicalName}
+                                                <i>${technicalName}</i>
                                                 </div>
                                                 <div class="col-2">
-                                                    <button data-id="${productID}" type="button" data-target="addToCart" class="btn btnModalModel" data-bs-toggle="modal"
+                                                    <button data-id="${productID}" type="button" data-target="addToCart" class="btn btnInfoProduct" data-bs-toggle="modal"
                                                         data-bs-target="#modalCart">
                                                         ?
                                                     </button>
