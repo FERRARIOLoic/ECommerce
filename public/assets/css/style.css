@@ -32,11 +32,22 @@ main {
     margin: -16px;
 }
 
-h2, .dataProduct {
+h2 {
     border: 1px solid white;
     border-radius: 4px;
     color: white;
     padding: 20px;
+    background-color: #0000006b;
+    font-size: 1rem;
+    width: 200px;
+    text-align: center;
+}
+
+.dataProduct {
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    padding: 5px;
     background-color: #0000006b;
     font-size: 1rem;
     /* width: 100px; */
@@ -226,7 +237,7 @@ span {
 
 
 /* Media pour l'afichage desktop */
-@media screen and (min-width:576px) {
+@media screen and (min-width:770px) {
 
     body {
         /* min-height: 100vh; */
@@ -345,7 +356,7 @@ span {
 .productPreview{
     height:120px;
 }
-.btn{
+.btnInfoProduct{
     background-color: #0048ba;
-    border:3px solid red;
+    width:150px;
 }

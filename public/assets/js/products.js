@@ -215,34 +215,31 @@ selectFamily.forEach(eachTableElement => {
                     
                         htmlContent += `
                             
-                                <div class="col-6 col-md-3 bg-white p-3  align-self-center">
-                                    <!-- CARD -->
-                                    <div class="row hover align-self-center">
-                                        <div class="col-4  text-end">
-                                        <img class="productPreview" src="https://trepidai-astuces.s3.amazonaws.com/images/modeles/${marque}_${tutorialName}.jpg">
-                                        </div>
-                                        <div id="infoMovie" class="col-8 dataProduct">
-                                            <div id="titleMovie" class="row">
-                                                <div id="categories" class="col-12">
-                                                    <span id="categories"  class="hover">
-                                                    <strong>${commercialName}</strong>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div id="textMovie" class="row">
-                                                <div class="col-10">
-                                                <i>${technicalName}</i>
-                                                </div>
-                                                <div class="col-2">
-                                                    <button data-id="${productID}" type="button" data-target="addToCart" class="btn" data-bs-toggle="modal"
-                                                        data-bs-target="#modalCart">
-                                                        ?
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    <div class="col-6 col-md-3 bg-white py-1 px-3 align-self-center">
+    <!-- CARD -->
+    <div class="row hover align-self-center dataProduct">
+        <div class="col-4 text-end align-self-center">
+            <img class="productPreview"
+                src="https://trepidai-astuces.s3.amazonaws.com/images/modeles/${marque}_${tutorialName}.jpg">
+        </div>
+        <div id="infoMovie" class="col-8">
+            <div id="titleMovie" class="row">
+                <div id="categories" class="col-12 text-end hover">
+                    <strong>${commercialName}</strong>
+                </div>
+                <div class="col-12 text-end">
+                    <i>${technicalName}</i>
+                </div>
+                <div class="col-12 text-end align-self-end">
+                    <button data-id="${productID}" type="button" data-target="addToCart" class="btn btnInfoProduct"
+                        data-bs-toggle="modal" data-bs-target="#modalCart">
+                        Plus d'infos
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
                             `;
                     }
                 })
