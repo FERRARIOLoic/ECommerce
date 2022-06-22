@@ -345,6 +345,7 @@ span {
 .productPreview{
     height:120px;
 }
-.btnInfoProduct{
+.btn{
     background-color: #0048ba;
+    border:3px solid red;
 }

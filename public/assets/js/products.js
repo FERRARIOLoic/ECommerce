@@ -234,7 +234,7 @@ selectFamily.forEach(eachTableElement => {
                                                 <i>${technicalName}</i>
                                                 </div>
                                                 <div class="col-2">
-                                                    <button data-id="${productID}" type="button" data-target="addToCart" class="btn btnInfoProduct" data-bs-toggle="modal"
+                                                    <button data-id="${productID}" type="button" data-target="addToCart" class="btn" data-bs-toggle="modal"
                                                         data-bs-target="#modalCart">
                                                         ?
                                                     </button>
