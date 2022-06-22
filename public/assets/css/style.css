@@ -353,10 +353,11 @@ span {
     background-color: #121212;
 }
 
-.productPreview{
-    height:120px;
+.productPreview {
+    height: 120px;
 }
-.btnInfoProduct{
+
+.btnInfoProduct {
     background-color: #0048ba;
-    width:150px;
+    width: 150px;
 }
